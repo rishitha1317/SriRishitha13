@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class ArrayDuplication {
+	static int inter(int[]a) {
+		int i=0,j=1;
+		while(j<a.length) {
+			if(a[i]!=a[j]) {
+				a[i+1]=a[j];
+				i++;
+			}
+			j++;
+		}
+		return i;
+	}
+	public static void main(String[] args) {
+		System.out.println("enter the size");
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int a[]=new int[n];
+		System.out.println("enter the elements");
+		for(int i=0;i<n;i++) {
+			a[i]=s.nextInt();
+		}
+		int sum=inter(a);
+		for(int i=0;i<=sum;i++) {
+			System.out.println(a[i]);
+		}
+	}
+}
