@@ -11,7 +11,7 @@ public class NameRearranger {
             String lastName = nameParts[2];
             System.out.println(lastName + " " + middleName + " " +firstName);
         } else {
-            System.out.println("Please enter a valid name with both first and last names.");
+            System.out.println("Please enter a valid name with the first,middle and last names.");
         }
         scanner.close();
     }
